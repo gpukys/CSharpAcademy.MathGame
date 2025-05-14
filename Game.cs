@@ -2,10 +2,8 @@
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using static MathGame.Enums;
 
 namespace MathGame
@@ -14,7 +12,7 @@ namespace MathGame
     {
         private readonly Stopwatch Timer = new Stopwatch();
         private byte Rounds = 1;
-        internal byte Correct { get; private set; } = 0;
+        internal byte Correct { get; private set; };
         internal readonly byte ROUND_LIMIT = 10;
         private readonly Random Rand = new Random();
         internal readonly Operation Operation = operation;

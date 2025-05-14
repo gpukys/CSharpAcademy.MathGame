@@ -1,5 +1,4 @@
-﻿using System;
-namespace MathGame
+﻿namespace MathGame
 {
     internal class Enums
     {
